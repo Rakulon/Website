@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<script src="jquery.js"></script>
+<link href='ccs.css' rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+<title>William J Curotto</title>
+</head>
+<body>
+<h1>Howdy, I'm William Curotto</h1>
+<h2>Here is a little about me...</h2>
+<p>About me:<br />
+  <small>Please feel free to call me Will or Billy. I am 24 and I live in Oakland, California where I was born and raised. My time is spent mostly reading all manner of things, but I generally gravitate towards physics and history. I attended Bishop O'Dowd High School and Ex'pression College for Digital Arts (I studied Animation and Visual Effects). I continue to pursue higher education at Diablo Valley College where I am studying physics. I have virtually no coding experience prior to the Dash tutorials, though I find many concepts of computer science fascinatingly natural. I hike and climb often. The Bay Area mountains and trails have some of the best views in the world, and I love living here! <br /> Contact info: <br /> Cell: 1-510-388-2644 <br /> Email: kekknyx@gmail.com</small></p>
+<div class="first show-description"><p4><small>Up hiking behind the family Tahoe house.</small></p4></div>
+<div class="second show-description"><p4><small><small>Here I am, William Curotto!</small></p4></div>
+<div class="third show-description"><p4><small>Down in Malibu, Looking forward.</small></p4></div>
+<div id="carousel">
+          <ul>
+		<li><img src="http://i.imgur.com/vgLH7qy.jpg" alt="Rock" /></li>
+		<li><img src="http://i.imgur.com/XLURR3j.jpg" alt="Family" /></li>
+		<li><img src="http://i.imgur.com/6GDNQoc.png" alt="Dark" /></li>
+          </ul>
+       </div>
+<script>
+// carousel cargo ^
+// carousel below
+// when page loads
+$(document).ready(function(){
+	// interval 5 seconds 
+	var t = setInterval(function(){
+		// move picture to the left
+		$("#carousel ul").animate({marginLeft:-480},1000,function(){
+			// when pictures end get first picture
+			$(this).find("li:last").after($(this).find("li:first"));
+			$(this).css({marginLeft:0});
+		})
+	},5000);
+	});
+</script>
+</body>

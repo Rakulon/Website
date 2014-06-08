@@ -1,0 +1,129 @@
+body {
+  font-family: 'Old Standard TT', serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image: url("http://i.imgur.com/hnlPIpI.jpg");
+  background-size: cover;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+  font-size: 75px;
+  background: white;
+  padding: 10px;
+    color: darkgrey;
+  margin: 60px 0 0 0;
+  border-radius: 12px;
+}
+h2 {
+  text-align: center;
+  color: rgba(60,60,60,1);
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(60,60,60,1);
+  padding: 100px;
+  line-height: 28px;
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+  position: center;
+  left: -200px;
+  bottom: 110px;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+ }
+  p4 {
+  background: rgba(0,0,0,.3);
+  color: rgba(255,255,255,1);
+  padding: 10px;
+  line-height: 28px;
+  font-family: 'Old Standard TT', serif;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+small {
+  opacity: 1;
+}
+
+#carousel {
+    width: 500px;
+    height: 500px;
+    position: center;
+    left: -600px;
+    top: -1800px;
+    border-radius: 12px;
+     overflow: hidden;
+  }
+
+  #carousel ul {
+    width: 1920px;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+  }
+  #carousel ul li {
+    background-size: cover;
+    width:680px;
+    border-radius: 12px;
+    text-align: center;
+    height: 580px;
+    list-style: none;
+    float:  left;
+  }
+
+.first{
+  background-image: url("http://i.imgur.com/bSsM1pU.jpg");
+  height: 600px;
+   position: relative;
+  left: 600px;
+  top: -300px;
+  text-align: justify;
+  margin: 0 auto; 
+ }
+.second{
+  background-image: url("http://i.imgur.com/UJkeidV.jpg");
+  position: relative;
+  top: -250px;
+  text-align: justify;
+  }
+.third{
+  background-image: url("ocean.jpg");
+  height: 600px;
+   position: relative;
+  left: -600px;
+  top: -200px;
+  text-align: justify;
+  }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
